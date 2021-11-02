@@ -28,7 +28,7 @@ style_path = tf.keras.utils.get_file(
     'blue_abstract_line.jpg', 'https://raw.githubusercontent.com/nikhil-kamath/neural-style-transfer/main/blue_abstract_lines.jpg')
 
 content_path = tf.keras.utils.get_file(
-    'me_walking.jpg', 'https://raw.githubusercontent.com/nikhil-kamath/neural-style-transfer/main/me_walking.jpg')
+    'me_walking.png', 'https://github.com/nikhil-kamath/neural-style-transfer/blob/main/me_walking.png')
 
 
 
