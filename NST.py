@@ -24,14 +24,17 @@ def tensor_to_image(tensor):
     return PIL.Image.fromarray(tensor)
 
 
-content_path = tf.keras.utils.get_file(
-    'me_walking.JPG', 'https://raw.githubusercontent.com/nikhil-kamath/neural-style-transfer/main/me_walking.JPG')
 style_path = tf.keras.utils.get_file(
-    'blue_abstract_lines.jpg', 'https://raw.githubusercontent.com/nikhil-kamath/neural-style-transfer/main/blue_abstract_lines.jpg')
+    'blue_abstract_line.jpg', 'https://raw.githubusercontent.com/nikhil-kamath/neural-style-transfer/main/blue_abstract_lines.jpg')
 
-def load_img(path_to_image):
+content_path = tf.keras.utils.get_file(
+    'me_walking.jpg', 'https://raw.githubusercontent.com/nikhil-kamath/neural-style-transfer/main/me_walking.jpg')
+
+
+
+def load_img(path_to_img):
     max_dim = 512
-    img = tf.io.read_file(path_to_image)
+    img = tf.io.read_file(path_to_img)
     img = tf.image.decode_image(img, channels=3)
     img = tf.image.convert_image_dtype(img, tf.float32)
 
@@ -63,3 +66,4 @@ plt.subplot(1, 2, 2)
 imshow(style_image, 'Style Image')
 
 
+plt.show()
