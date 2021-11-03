@@ -1,3 +1,3 @@
 from PIL import Image
-img = Image.open('me_walking.jpg')
-img.save('me_walking.jpeg')
+img = Image.open('abstract2.jfif')
+img.save('abstract2.jpeg')
