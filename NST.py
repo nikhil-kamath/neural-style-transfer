@@ -29,7 +29,7 @@ def tensor_to_image(tensor):
 content_path = tf.keras.utils.get_file(
     'me_walking.jpeg', 'https://raw.githubusercontent.com/nikhil-kamath/neural-style-transfer/main/me_walking.jpeg')
 style_path = tf.keras.utils.get_file(
-    'abstract2.jpeg', 'https://raw.githubusercontent.com/nikhil-kamath/neural-style-transfer/main/abstract2.jpeg')
+    'starry.jpeg', 'https://raw.githubusercontent.com/nikhil-kamath/neural-style-transfer/main/starry.jpeg')
 
 
 
