@@ -29,7 +29,7 @@ def tensor_to_image(tensor):
 content_path = tf.keras.utils.get_file(
     'me_walking.jpeg', 'https://raw.githubusercontent.com/nikhil-kamath/neural-style-transfer/main/me_walking.jpeg')
 style_path = tf.keras.utils.get_file(
-    'warms.png', 'https://raw.githubusercontent.com/nikhil-kamath/neural-style-transfer/main/warms.png')
+    'abstract2.jpeg', 'https://raw.githubusercontent.com/nikhil-kamath/neural-style-transfer/main/abstract2.jpeg')
 
 
 
@@ -144,7 +144,7 @@ tensor_to_image(image).save(test_filepath)
 
 start = time.time()
 
-epochs = 10
+epochs = 20
 steps_per_epoch = 100
 
 step = 0
@@ -160,7 +160,7 @@ for _ in range(epochs):
 end = time.time()
 print("Total time: {:.1f}".format(end-start))
 
-final_filepath = 'final.jpg'
+final_filepath = 'final2.jpg'
 tensor_to_image(image).save(final_filepath)
 
 
